@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Slug Force 69 - A 3D FPS Game">
+    <title>Slug Force 69 - FPS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- HUD Interface - The player's heads-up display -->
+    <div id="hud">
+        <!-- Health Bar - Like a car's fuel gauge -->
+        <div id="healthBar">
+            <div id="healthFill"></div>
+            <div id="healthText">HEALTH: 100</div>
+        </div>
+        
+        <!-- Ammo Counter -->
+        <div id="ammoCounter">SLUG AMMO: ∞</div>
+        
+        <!-- Kill Counter -->
+        <div id="killCounter">KILLS: 0</div>
+        
+        <!-- Crosshair -->
+        <div id="crosshair"></div>
+        
+        <!-- Instructions Panel -->
+        <div id="instructions">
+            <h3>🐌 SLUG FORCE 69 🐌</h3>
+            <p><strong>WASD</strong> - Move</p>
+            <p><strong>MOUSE</strong> - Look Around</p>
+            <p><strong>CLICK</strong> - Fire Slug Gun</p>
+            <p><strong>SPACE</strong> - Jump</p>
+            <p style="margin-top: 10px; color: #ff0;">Enemies rush to melee you!</p>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div id="gameOver">
+            <h1☠️ SLUG DOWN ☠️</h1>
+            <p>You were overwhelmed by the enemy forces!</p>
+            <p id="finalScore">Kills: 0</p>
+            <button id="restartBtn">RESPAWN</button>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Game Scripts - Loaded in order of dependency -->
+    <script src="js/config.js"></script>
+    <script src="js/gameState.js"></script>
+    <script src="js/scene.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/weapon.js"></script>
+    <script src="js/projectiles.js"></script>
+    <script src="js/enemies.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
